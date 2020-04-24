@@ -24,7 +24,7 @@ whitenoise==4.1.2
 psycopg2
 pandas==1.0.3
 matplotlib==3.2.1
-re==2.7
+regex==2.2.1
 Counter==3.1
 seaborn==0.10.0
 gensim==3.6.0
