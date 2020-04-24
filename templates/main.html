@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit Flair Detector</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+   <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+   <link href="{{ url_for('static',filename = 'style.css') }}" rel="stylesheet" type="text/css">
+</head>
+<div class="formbox" style="background-color: azure">
+<form action="{{ url_for('main') }}" method="POST">
+    <fieldset style="color:cadetblue">
+        <legend style="font-size:20px; color:darkcyan">Reddit Flair Detector:</legend>
+        Enter a Reddit Post URL  <a href="https://reddit.com/r/india" style="color: black">here</a>:
+        <input name="url" type="text" required>
+        <br>
+        <br>
+        <input type="submit" class="btn btn-primary btn-block btn-large" style="font-size:17px; background-color : khaki;color:brown">
+        
+    
+    
+</fieldset>
+
+</form>
+
+
+
+   <!--<div> 
+       <form method = "GET" action="/stats">
+        <div class="form-actions">
+          <button class="btn btn-primary btn-block btn-large" type="submit">Statistics</button>
+        </div>-->
+</div>
+
+<!-- <div class="imagebox">
+    <h1>Statistics</h1>
+    <img src="{{url_for('static', filename='image.jpg')}}" alt="" srcset="" class="img">
+</div> -->
+<br>
+<div class="result" align="center" style="background-color:lightblue">
+    {% if result %}
+    	{% for variable, value in original_input.items() %}
+    		<b>{{ variable }}</b> : {{ value }}
+    	{% endfor %}
+		<br>
+    	<br> Predicted flair:
+   		<p style="font-size:60px;color:darkblue;" >{{ result }}</p>
+    {% endif %}
+</div>
+
+</html>
