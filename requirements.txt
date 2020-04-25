@@ -28,7 +28,7 @@ requests==2.21.0
 scikit-learn==0.22.2
 scipy==1.2.1
 update-checker==0.16
-urllib3==1.24.1
+urllib3==1.24.2
 psycopg2
 pandas==0.24.1
 textblob==0.15.3
