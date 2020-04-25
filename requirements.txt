@@ -8,11 +8,6 @@ gensim==3.6.0
 google==2.0.3
 google-colab==1.0.0
 gunicorn==19.9.0
-h5py==2.10.0
-html5lib==1.0.1
-httpimport==0.5.18
-httplib2==0.17.3
-httplib2shim==0.0.3
 imbalanced-learn==0.4.3
 imblearn==0.0
 ipykernel==4.10.1
@@ -36,10 +31,6 @@ update-checker==0.16
 urllib3==1.24.1
 psycopg2
 pandas==0.24.1
-tblib==1.6.0
-tensorboard==2.2.1
-tensorboard-plugin-wit==1.6.0.post3
-tensorboardcolab==0.0.22
 tensorflow==2.2.0rc3
 tensorflow-addons==0.8.3
 textblob==0.15.3
