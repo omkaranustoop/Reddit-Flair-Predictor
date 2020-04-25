@@ -12,7 +12,7 @@ The directory is a ***Flask*** web application set-up for hosting on *Heroku* se
   4. Procfile - Needed for Heroku Deployment.
   5. Reddit_India_Updated5.csv - Data Crawled from Reddit India after cleaning.
   6. SMOTE_XGB_MODEL_Cleaned_Final2.sav - The Final Model saved after training on Dataset.
-  7. Notebooks - This has the three Jupyter Notebook Files for Data Collection(Reddit_Crawl_Script), Data Analysis(Exploratory_Data_Analysis_Final) and Flare Prediction(FInal_Reddit_Flare_Detector). Notebooks can be opened in Colaboratory.
+  7. Notebooks - This has the three Jupyter Notebook Files for Data Collection(Reddit_Crawl_Script), Data Analysis(Exploratory_Data_Analysis_Final) and Flare Prediction(Final_Reddit_Flare_Detector). Notebooks can be opened in Colaboratory.
   8. Templates - This folder Contains the HTML files used for Building the Web Application's Front End.
   9. Static - Contains the CSS file for Web Applications' Front End.
   
