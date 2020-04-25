@@ -21,6 +21,7 @@ keras-vis==0.4.1
 lxml==4.3.1
 nltk==3.4
 numpy==1.18.3
+pandas==1.0.3
 praw==6.1.1
 prawcore==1.0.1
 pytz==2018.9
