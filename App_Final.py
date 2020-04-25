@@ -62,7 +62,7 @@ from sklearn.model_selection import train_test_split
 # file_name = "model/random_forest_model.bin.zip"
 
 # Use pickle to load in the pre-trained model
-model = pickle.load(open("Pickle_RL_Model3.pkl", "rb"))
+model = pickle.load(open("Pickle_RL_Model.pkl", "rb"))
 
 reddit = praw.Reddit(client_id='c5b4px4PJE70tQ',
                      client_secret='W70uu68jb1-0xV_KQrQnqthnUtQ',
