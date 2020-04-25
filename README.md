@@ -1,10 +1,10 @@
 # Reddit Flair Detector
 
-A Reddit Flair Detector web application to detect flairs of India subreddit posts using Machine Learning algorithms. The application can be found live at [Reddit Flair Detector](https://redditindiaflair.herokuapp.com).
+A Reddit Flair Detector web application to detect flairs of Reddit India posts using Machine Learning algorithms. The application can be found live at [Reddit Flair Detector](https://redditindiaflair.herokuapp.com).
 
 ### Directory Structure
 
-The directory is a ***Django*** web application set-up for hosting on *Heroku* servers. The description of files and folders can be found below:
+The directory is a ***Flask*** web application set-up for hosting on *Heroku* servers. The description of files and folders can be found below:
 
   1. [manage.py](https://github.com/radonys/Reddit-Flair-Detector/blob/master/manage.py) - The file used to start Django server.
   2. [requirements.txt](https://github.com/radonys/Reddit-Flair-Detector/blob/master/requirements.txt) - Containing all Python dependencies of the project.
@@ -131,7 +131,3 @@ The approach taken for the task is as follows:
 
 The features independently showed a test accuracy near to **60%** with the `body` feature giving the worst accuracies during the experiments. Hence, it was excluded in the combined feature set.
 
-### References
-
-1. [How to scrape data from Reddit](http://www.storybench.org/how-to-scrape-reddit-with-python/)
-2. [Multi-Class Text Classification Model Comparison and Selection](https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568)
