@@ -31,8 +31,6 @@ update-checker==0.16
 urllib3==1.24.1
 psycopg2
 pandas==0.24.1
-tensorflow==2.2.0rc3
-tensorflow-addons==0.8.3
 textblob==0.15.3
 tqdm==4.38.0
 xgboost==1.0.2
