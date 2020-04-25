@@ -6,10 +6,10 @@ A Reddit Flair Detector web application to detect flairs of Reddit India posts u
 
 The directory is a ***Flask*** web application set-up for hosting on *Heroku* servers. The description of files and folders can be found below:
 
-  1. [manage.py](https://github.com/radonys/Reddit-Flair-Detector/blob/master/manage.py) - The file used to start Django server.
-  2. [requirements.txt](https://github.com/radonys/Reddit-Flair-Detector/blob/master/requirements.txt) - Containing all Python dependencies of the project.
-  3. [nltk.txt](https://github.com/radonys/Reddit-Flair-Detector/blob/master/nltk.txt) - Containing all NLTK library needed dependencies.
-  4. [Procfile](https://github.com/radonys/Reddit-Flair-Detector/blob/master/Procfile) - Needed to setup Heroku.
+  1. App_Final.py - The Flask Web Application File.
+  2. requirements.txt - Containing all Python dependencies of the project.
+  3. nltk.txt - Containing all NLTK library needed dependencies.
+  4. Procfile - Needed for Heroku Deployment.
   5. [website](https://github.com/radonys/Reddit-Flair-Detector/tree/master/website) - Folder containing the master settings of Django application.
   6. [templates](https://github.com/radonys/Reddit-Flair-Detector/tree/master/templates/flair_detector) - Folder containing HTML/CSS files.
   7. [flair-detector](https://github.com/radonys/Reddit-Flair-Detector/tree/master/flair_detector) - Folder containing the main application which loads the Machine Learning models and renders the results on the web application.
@@ -19,7 +19,7 @@ The directory is a ***Flask*** web application set-up for hosting on *Heroku* se
   
 ### Codebase
 
-The entire code has been developed using Python programming language, utilizing it's powerful text processing and machine learning modules. The application has been developed using Django web framework and hosted on Heroku web server.
+The entire code has been developed using Python programming language, utilizing it's powerful text processing and machine learning modules. The application has been developed using Flask web framework and hosted on Heroku web server.
 
 ### Project Execution
 
@@ -33,17 +33,6 @@ The entire code has been developed using Python programming language, utilizing 
   8. Now, execute the following command: `python manage.py runserver` and it will point to the `localhost` with the port.
   9. Hit the `IP Address` on a web browser and use the application.
   
-### Dependencies
-
-The following dependencies can be found in [requirements.txt](https://github.com/radonys/Reddit-Flair-Detector/blob/master/requirements.txt):
-
-  1. [praw](https://praw.readthedocs.io/en/latest/)
-  2. [scikit-learn](https://scikit-learn.org/)
-  3. [nltk](https://www.nltk.org/)
-  4. [Django](https://www.djangoproject.com/)
-  5. [bs4](https://pypi.org/project/bs4/)
-  6. [pandas](https://pandas.pydata.org/)
-  7. [numpy](http://www.numpy.org/)
   
 ### Approach
 
