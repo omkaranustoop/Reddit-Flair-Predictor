@@ -12,7 +12,7 @@ The directory is a ***Flask*** web application set-up for hosting on *Heroku* se
   4. Procfile - Needed for Heroku Deployment.
   5. Reddit_India_Updated5.csv - Data Crawled from Reddit India after cleaning.
   6. SMOTE_XGB_MODEL_Cleaned_Final2.sav - The Final Model saved after training on Dataset.
-  8. [data](https://github.com/radonys/Reddit-Flair-Detector/tree/master/data) - Folder containing CSV and MongoDB instances of the collected data.
+  7. Notebooks - This has the three Jupyter Notebook Files for Data Collection(Reddit_Crawl_Script), Data Analysis(Exploratory_Data_Analysis_Final) and Flare Prediction(FInal_Reddit_Flare_Detector).
   9. [Models](https://github.com/radonys/Reddit-Flair-Detector/tree/master/Models) - Folder containing the saved model.
   10. [Jupyter Notebooks](https://github.com/radonys/Reddit-Flair-Detector/tree/master/Jupyter%20Notebooks) - Folder containing Jupyter Notebooks to collect Reddit India data and train Machine Learning models. Notebooks can be opened in [Colaboratory](https://colab.research.google.com/) by Google.
   
