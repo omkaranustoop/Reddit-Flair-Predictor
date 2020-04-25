@@ -6,7 +6,6 @@ click==7.1.1
 cloudpickle==1.3.0
 chardet==3.0.4
 editdistance==0.5.3
-en-core-web-sm==2.2.5
 Flask==1.1.2
 gensim==3.6.0
 google==2.0.3
