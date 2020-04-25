@@ -47,7 +47,6 @@ def clean_text(text):
 
 
 
-import keras
 import pickle
 import gensim
 import praw
