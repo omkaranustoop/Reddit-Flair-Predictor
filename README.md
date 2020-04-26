@@ -106,3 +106,20 @@ The approach taken for the task is as follows:
 
 #### Analysis and Key Observations
 
+**Intuition behind Choosing Random Forest and Xgboost**
+
+This task involved classifying among 11 flairs. Hence it was evident that a comibination of Decision Trees would be required for multi-class classification.Moreover, the Ensemble Learning Method of Random Forest which operates by Constructing Multiple Decision Trees seemed promising. Hence, Random Forest was selected for experimentation.
+
+I got encouraging results and to further convert my model into a strong learning model with improved accuracy, I experimented with Gradient Boosted Decision Trees(Xgboost) where each new tree is fit on modified version of Original Dataset.Both the Models were combined with Oversampling/Undersampling to see which combination yields best results.
+
+**Understanding Failure of Deep-Learning Models**
+
+Both CNN and LSTM model failed to perform upto mark. For CNNs, I would attribute the reason to huge number of similar words in multiple flairs(See [Analysis](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Exploratory_Data_Analysis_Final%20.ipynb) for details). Since CNN works on Detecting spatial patterns, similarity in patterns in multiple data points is likely to confuse the model and lead to inefficient classification. The failure of LSTM can be attributed to limited data points and underfitting.
+
+**Observations**
+
+The deployed model using Extreme Gradient Boosting succeeds in classifying posts with flairs *Politics, Sports, Food, AskIndia, AMA* with good accuracy. However it fails to classify other flairs with similar accuracy. The main reason behind this is the above mentioned flairs have distinct and wide-range corpus. The remaining flairs have words which form a subset of any of the other flairs. Hence they are mis-classified. Detailed explanation of why a certain flair is mis-classified can be found [here](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Exploratory_Data_Analysis_Final%20.ipynb).
+
+**End-Note**
+
+Unfortunately, the flair 'Coronavirus' was not included during data Collection. Any Post on Coronavirus is most likely to Classified as Politics(Due to Role of Govt.), Food(The main concern of the Nation) or AskIndia.
