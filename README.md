@@ -71,63 +71,30 @@ The approach taken for the task is as follows:
     
     a) CNN for Text Classification
     b) LSTM for Text Classification
-  9. Training and Testing on the dataset showed the **Xgboost** showed the best testing accuracy of **80.85%** when trained on the combination of **Title + Comments + Body+ Url** feature.
-   10. The best model is saved and is used for prediction of the flair from the URL of the post.
+    
+  9.  Experimentation showed that combination of **Title + Body + Url + Comments** gave best results. Hence, I proceeded with it.
+  10. Training and Testing on the dataset showed the **Xgboost** showed the best testing accuracy of **80.85%** when trained on the combination of **Title + Comments + Body+ Url** feature.
+  11. It was followed by **SMOTE Oversampling + Xgboost** with **79.33%** accuracy . However, the Oversampling model was more effective at creating a healthy bias and making efficient predictions.
+  12. The Simple Xgboost model was used in Deployment since unfortunately the Oversampling Model faced some technical issues. It can be tested by the user in local environment and much more efficient results can be obtained.
     
 ### Results
 
-#### Title as Feature
+#### Machine Learning Models
 
 | Machine Learning Algorithm | Test Accuracy     |
 | -------------              |:-----------------:|
-| Naive Bayes                | 0.6011904762      |
-| Linear SVM                 | 0.6220238095      |
-| Logistic Regression        | **0.6339285714**  |
-| Random Forest              | 0.6160714286      |
-| MLP                        | 0.4970238095      |
+| Random Forest + SMOTE      |  0.7256198347     |
+| Xgboost + SMOTE            |**0.7933884297**   |
+| Xgboost + ROS              |  0.7851239669     |
+| Xgboost + RUS              |  0.7917355371     |
+| Xgboost                    |**0.8085399449**   |
+| Random Forest              |  0.7669421487     |
 
-#### Body as Feature
 
-| Machine Learning Algorithm | Test Accuracy     |
+#### Deep Learning Models
+
+| Model                      | Test Accuracy     |
 | -------------              |:-----------------:|
-| Naive Bayes                | 0.2083333333      |
-| Linear SVM                 | 0.2470238095      |
-| Logistic Regression        | 0.2619047619      |
-| Random Forest              | **0.2767857143**  |
-| MLP                        | 0.2113095238      |
-
-#### URL as Feature
-
-| Machine Learning Algorithm | Test Accuracy     |
-| -------------              |:-----------------:|
-| Naive Bayes                | 0.3005952381      |
-| Linear SVM                 | **0.3898809524**  |
-| Logistic Regression        | 0.3690476190      |
-| Random Forest              | 0.3005952381      |
-| MLP                        | 0.3214285714      |
-
-#### Comments as Feature
-
-| Machine Learning Algorithm | Test Accuracy     |
-| -------------              |:-----------------:|
-| Naive Bayes                | 0.5357142857      |
-| Linear SVM                 | 0.6190476190      |
-| Logistic Regression        | **0.6220238095**  |
-| Random Forest              | 0.6011904762      |
-| MLP                        | 0.4761904762      |
-
-#### Title + Comments + URL as Feature
-
-| Machine Learning Algorithm | Test Accuracy     |
-| -------------              |:-----------------:|
-| Naive Bayes                | 0.6190476190      |
-| Linear SVM                 | 0.7529761905      |
-| Logistic Regression        | 0.7470238095      |
-| Random Forest              | **0.7797619048**  |
-| MLP                        | 0.4940476190      |
-
-
-### Intuition behind Combined Feature
-
-The features independently showed a test accuracy near to **60%** with the `body` feature giving the worst accuracies during the experiments. Hence, it was excluded in the combined feature set.
+| CNN                        | 0.6553            |
+| LSTM                       | 0.1990            |
 
