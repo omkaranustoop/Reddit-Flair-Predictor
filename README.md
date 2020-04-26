@@ -11,10 +11,11 @@ The directory is a ***Flask*** web application set-up for hosting on *Heroku* se
   3. nltk.txt - Containing all NLTK library needed dependencies.
   4. Procfile - Needed for Heroku Deployment.
   5. Reddit_India_Updated5.csv - Data Crawled from Reddit India after cleaning.
-  6. SMOTE_XGB_MODEL_Cleaned_Final2.sav - The Final Model saved after training on Dataset.
-  7. Notebooks - This has the three Jupyter Notebook Files for Data Collection(Reddit_Crawl_Script), Data Analysis(Exploratory_Data_Analysis_Final) and Flare Prediction(Final_Reddit_Flare_Detector). Notebooks can be opened in Colaboratory.
-  8. Templates - This folder Contains the HTML files used for Building the Web Application's Front End.
-  9. Static - Contains the CSS file for Web Application's Front End.
+  6. SMOTE_XGB_MODEL_Cleaned_Final2.sav/Pickle_RL_Model.pkl - Xgboost + SMOTE Oversampling Model with 79.33 % Accuracy.
+  7. Pickle_RL_Model3.pkl - Xgboost Model with 80.85 % Accuracy
+  8. Notebooks - This has the three Jupyter Notebook Files for Data Collection(Reddit_Crawl_Script), Data Analysis(Exploratory_Data_Analysis_Final) and Flare Prediction(Final_Reddit_Flare_Detector). Notebooks can be opened in Colaboratory.
+  9. Templates - This folder Contains the HTML files used for Building the Web Application's Front End.
+  10. Static - Contains the CSS file for Web Application's Front End.
   
 ### Additional Requirements
 Apart from the Dependencies in [requirements](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/requirements.txt),
@@ -31,12 +32,9 @@ The entire code has been developed using Python programming language, utilizing 
   1. Open Terminal
   2. Clone the repository by entering 'git clone https://github.com/omkaranustoop/Reddit-Flare-Detector.git'.
   3. Open IPython Console and set the directory to the cloned repository directory.
-  4. Create a `virtualenv` by executing the following command: `virtualenv -p python3 env`.
-  5. Activate the `env` virtual environment by executing the follwing command: `source env/bin/activate`.
-  6. Enter the cloned repository directory and execute `pip install -r requirements.txt`.
-  7. Enter `python` shell and `import nltk`. Execute `nltk.download('stopwords')` and exit the shell.
-  8. Now, execute the following command: `python manage.py runserver` and it will point to the `localhost` with the port.
-  9. Hit the `IP Address` on a web browser and use the application.
+  4. Execute 'pip install -r requirements.txt' in the console.
+  5. Run the App_Final.py file and it will point to the 'localhost' with the port.
+  6. Open the 'localhost IP address' on a web browser and use the application.
   
   
 ### Approach
