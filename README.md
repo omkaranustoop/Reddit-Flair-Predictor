@@ -73,7 +73,7 @@ The approach taken for the task is as follows:
   9.  Experimentation showed that combination of **Title + Body + Url + Comments** gave best results. Hence, I proceeded with it.
   10. Training and Testing on the dataset showed the **Xgboost** showed the best testing accuracy of **80.85%** when trained on the combination of **Title + Comments + Body+ Url** feature.
   11. It was followed by **SMOTE Oversampling + Xgboost** with **79.33%** accuracy . However, the Oversampling model was more effective at creating a healthy bias and making efficient predictions.
-  12. The Simple Xgboost model was used in Deployment since unfortunately the Oversampling Model faced some technical issues. It can be tested by the user in local environment and much more efficient results can be obtained.
+  12. The Simple Xgboost model was used in Deployment since unfortunately the Oversampling Model faced some technical issues in deployment. It can be tested by the user in local environment and much more efficient results can be obtained.
     
 ### Results
 
