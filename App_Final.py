@@ -64,9 +64,9 @@ from sklearn.model_selection import train_test_split
 # Use pickle to load in the pre-trained model
 model = pickle.load(open("Pickle_RL_Model_Final.pkl", "rb"))
 
-reddit = praw.Reddit(client_id='c5b4px4PJE70tQ',
-                     client_secret='W70uu68jb1-0xV_KQrQnqthnUtQ',
-                     user_agent='Flare_Project')
+reddit = praw.Reddit(client_id='#',
+                     client_secret='#',
+                     user_agent='#')
 
 from urllib.parse import urlparse
 
