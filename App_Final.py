@@ -68,6 +68,14 @@ reddit = praw.Reddit(client_id='#',
                      client_secret='#',
                      user_agent='#')
 
+from urllib.parse import urlparse
+
+def is_url(url):
+  try:
+    result = urlparse(url)
+    return all([result.scheme, result.netloc])
+  except ValueError:
+    return False
 
 def prediction(url):
 	submission = reddit.submission(url = url)
@@ -118,12 +126,14 @@ def main():
         text = flask.request.form['url']
         
         # Get the model's prediction
-        flair = prediction(str(text))
+        if(is_url(str(text))):
+            flair = prediction(str(text))
     
         # Render the form again, but add in the prediction and remind user
         # of the values they input before
-        return flask.render_template('main.html', original_input={'url':str(text)}, result=flair,)
-
+            return flask.render_template('main.html', original_input={'url':str(text)}, result=flair,)
+        else:
+            return flask.render_template('main.html', original_input={'url':str(text)}, result="Enter Correct URL",)
 @app.route('/automated_testing', methods = ['POST'])
 def getfile():
     upload_file = request.files["upload_file"]
