@@ -20,8 +20,7 @@ The directory is a ***Flask*** web application set-up for hosting on *Heroku* se
 Apart from the Dependencies in [requirements](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/requirements.txt),
 the following Requirements might be needed depending on the Approach:-
 
-1.tensorflow==2.2.0rc3
-2.tensorboard==2.2.1
+tensorflow==2.2.0rc3, tensorboard==2.2.1
 
 ### Codebase
 
@@ -49,24 +48,30 @@ The approach taken for the task is as follows:
   1. Used Reddit Crawl Script to Collect 150 Reddit India SubReddit data for each of the 11 flairs.
   2. The data includes *flair,title,score,id,url,number of comments,body,time of creation,author* and *comments*.
   3. For **comments**, only top level comments are considered in dataset and no sub-comments are present.
-  4. The ***title, comments*** and ***body*** are cleaned by removing bad symbols and stopwords using `nltk`.
-  5. Five types of features are considered for the the given task:
+  4. The Collected data was saved and loaded in Exploratory Data Analysis file for Cleaning and Analysis.
+  5. The ***title, comments*** and ***body*** are cleaned by removing bad symbols and stopwords using `nltk`.
+  6. Three types of features are considered for the the given task:
     
-    a) Title
+    a) Body
     b) Comments
-    c) Urls
-    d) Body
-    e) Combining Title, Comments and Urls as one feature.
-  6. The dataset is split into **70% train** and **30% test** data using `train-test-split` of `scikit-learn`.
-  7. The dataset is then converted into a `Vector` and `TF-IDF` form.
-  8. Then, the following ML algorithms (using `scikit-learn` libraries) are applied on the dataset:
+    c) Combining Title, Comments, Url and Body as one feature.
+
+  6. The dataset is split into **75% train** and **25% test** data using `train-test-split` of `scikit-learn`.
+  7. Then, the following Pipelines were built to train the dataset:
     
-    a) Naive-Bayes
-    b) Linear Support Vector Machine
-    c) Logistic Regression
-    d) Random Forest
-    e) MLP
-   9. Training and Testing on the dataset showed the **Random Forest** showed the best testing accuracy of **77.97%** when trained on the combination of **Title + Comments + Url** feature.
+    a) Tf-Idf Vectorizer + SMOTE Oversampling + Random Oversampling
+    b) Tf-Idf Vectorizer + SMOTE Oversampling + Xgboost
+    c) Tf-Idf Vectorizer + Random Oversampling + Xgboost
+    d) Tf-Idf Vectorizer + Random Undersampling + Xgboost
+    e) Tf-Idf Vectorizer + Random Forest
+    f) Tf-Idf Vectorizer + Xgboost
+    g) Tf-Idf Vectorizer + MLP
+    
+  8. Two Deep-Learning Models were also built after applying Tokenization and Embedding on DataSet:-
+    
+    a) CNN for Text Classification
+    b) LSTM for Text Classification
+  9. Training and Testing on the dataset showed the **Xgboost** showed the best testing accuracy of **80.85%** when trained on the combination of **Title + Comments + Body+ Url** feature.
    10. The best model is saved and is used for prediction of the flair from the URL of the post.
     
 ### Results
