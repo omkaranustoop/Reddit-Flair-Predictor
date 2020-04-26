@@ -122,4 +122,4 @@ The deployed model using Extreme Gradient Boosting succeeds in classifying posts
 
 **End-Note**
 
-Unfortunately, the flair 'Coronavirus' was not included during data Collection. Any Post on Coronavirus is most likely to Classified as Politics(Due to Role of Govt.), Food(The main concern of the Nation) or AskIndia.
+Unfortunately, the flair 'Coronavirus' was not included during data Collection. Any Post on Coronavirus is most likely to Classified as *Politics*(Due to Role of Govt.), *Food*(The main concern of the Nation) or *Policy/Economy*(Because of rising concerns arising due to Stand-Still situation). However, since Coronavirus is being talked about a lot and is most discussed, there is chance it might be classified into *AskIndia* or *Non-Political*.
