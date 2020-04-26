@@ -44,18 +44,18 @@ After studying several methods and going through various literatures on text-cla
 
 The approach taken for the task is as follows:
 
-**For Collecting Data**(Details in [Script](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Reddit_Crawl_Script%20.ipynb)
+**For Collecting Data**(Details in [Script](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Reddit_Crawl_Script%20.ipynb) )
 
   1. Used Reddit Crawl Script to Collect 150 Reddit India SubReddit data for each of the 11 flairs.
  
-**For Analysing the Collected Data**(Details in [DataAnalysis](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Exploratory_Data_Analysis_Final%20.ipynb)
+**For Analysing the Collected Data**(Details in [DataAnalysis](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Exploratory_Data_Analysis_Final%20.ipynb) )
 
   2. The data includes *flair, title, score, id, url, number of comments, body, time of creation, author* and *comments*.
   3. For **comments**, only top level comments are considered in dataset and no sub-comments are present.
   4. The Collected data was saved and loaded in Exploratory Data Analysis file for Cleaning and Analysis.
   5. The ***title, comments*** and ***body*** are cleaned by removing bad symbols and stopwords using `nltk`.
   
-**For Predicting the Flair of Reddit India Posts**(Details in [Detector](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Final_Reddit_Flair_Detector.ipynb)
+**For Predicting the Flair of Reddit India Posts**(Details in [Detector](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Final_Reddit_Flair_Detector.ipynb) )
 
   6. Three types of features are considered for the the given task:
     
