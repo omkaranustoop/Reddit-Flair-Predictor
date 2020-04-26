@@ -1,6 +1,6 @@
 # Reddit Flair Detector
 
-A Reddit Flair Detector web application to detect flairs of Reddit India posts using Machine Learning algorithms. The application can be found live at [Reddit Flair Detector](https://redditindiaflair.herokuapp.com).
+A Reddit Flair Detector web application to detect flairs of Reddit India posts using Machine Learning algorithms. The application can be found live at [Reddit Flair Detector](https://redditflaredetect.herokuapp.com/).
 
 ### Directory Structure
 
@@ -14,17 +14,24 @@ The directory is a ***Flask*** web application set-up for hosting on *Heroku* se
   6. SMOTE_XGB_MODEL_Cleaned_Final2.sav - The Final Model saved after training on Dataset.
   7. Notebooks - This has the three Jupyter Notebook Files for Data Collection(Reddit_Crawl_Script), Data Analysis(Exploratory_Data_Analysis_Final) and Flare Prediction(Final_Reddit_Flare_Detector). Notebooks can be opened in Colaboratory.
   8. Templates - This folder Contains the HTML files used for Building the Web Application's Front End.
-  9. Static - Contains the CSS file for Web Applications' Front End.
+  9. Static - Contains the CSS file for Web Application's Front End.
   
+### Additional Requirements
+Apart from the Dependencies in [requirements](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/requirements.txt),
+the following Requirements might be needed depending on the Approach:-
+
+1.tensorflow==2.2.0rc3
+2.tensorboard==2.2.1
+
 ### Codebase
 
 The entire code has been developed using Python programming language, utilizing it's powerful text processing and machine learning modules. The application has been developed using Flask web framework and hosted on Heroku web server.
 
 ### Project Execution
 
-  1. Open the `Terminal`.
-  2. Clone the repository by entering `git clone https://github.com/radonys/Reddit-Flair-Detector.git`.
-  3. Ensure that `Python3` and `pip` is installed on the system.
+  1. Open Terminal
+  2. Clone the repository by entering 'git clone https://github.com/omkaranustoop/Reddit-Flare-Detector.git'.
+  3. Open IPython Console and set the directory to the cloned repository directory.
   4. Create a `virtualenv` by executing the following command: `virtualenv -p python3 env`.
   5. Activate the `env` virtual environment by executing the follwing command: `source env/bin/activate`.
   6. Enter the cloned repository directory and execute `pip install -r requirements.txt`.
@@ -35,12 +42,12 @@ The entire code has been developed using Python programming language, utilizing 
   
 ### Approach
 
-Going through various literatures available for text processing and suitable machine learning algorithms for text classification, I based my approach using [[2]](https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568) which described various machine learning models like Naive-Bayes, Linear SVM and Logistic Regression for text classification with code snippets. Along with this, I tried other models like Random Forest and Multi-Layer Perceptron for the task. I have obtained test accuracies on various scenarios which can be found in the next section.
+After studying several methods and going through various literatures on text-classification, I decided to Experiment with classical Machine Learning Models like Random Forest and Extreme Gradient Boosted Trees with/without Oversampling and UnderSampling. I also experimented with Deep-Learning Architectures like CNN and LSTM. 
 
 The approach taken for the task is as follows:
 
-  1. Collect 100 India subreddit data for each of the 12 flairs using `praw` module [[1]](http://www.storybench.org/how-to-scrape-reddit-with-python/).
-  2. The data includes *title, comments, body, url, author, score, id, time-created* and *number of comments*.
+  1. Used Reddit Crawl Script to Collect 150 Reddit India SubReddit data for each of the 11 flairs.
+  2. The data includes *flair,title,score,id,url,number of comments,body,time of creation,author* and *comments*.
   3. For **comments**, only top level comments are considered in dataset and no sub-comments are present.
   4. The ***title, comments*** and ***body*** are cleaned by removing bad symbols and stopwords using `nltk`.
   5. Five types of features are considered for the the given task:
