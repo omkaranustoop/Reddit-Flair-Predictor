@@ -13,7 +13,7 @@ The directory is a ***Flask*** web application set-up for hosting on *Heroku* se
   5. Reddit_India_Updated5.csv - Data Crawled from Reddit India after cleaning.
   6. SMOTE_XGB_MODEL_Cleaned_Final2.sav/Pickle_RL_Model.pkl - Xgboost + SMOTE Oversampling Model with 79.33 % Accuracy.
   7. Pickle_RL_Model3.pkl - Xgboost Model with 80.85 % Accuracy
-  8. Notebooks - This has the three Jupyter Notebook Files for Data Collection(Reddit_Crawl_Script), Data Analysis(Exploratory_Data_Analysis_Final) and Flare Prediction(Final_Reddit_Flare_Detector). Notebooks can be opened in Colaboratory.
+  8. Notebooks - This has the three Jupyter Notebook Files for Data Collection(Reddit_Crawl_Script), Data Analysis    (Exploratory_Data_Analysis_Final) and Flare Prediction(Final_Reddit_Flare_Detector). Notebooks can be opened in Colaboratory.
   9. Templates - This folder Contains the HTML files used for Building the Web Application's Front End.
   10. Static - Contains the CSS file for Web Application's Front End.
   
