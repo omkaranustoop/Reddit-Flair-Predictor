@@ -36,6 +36,8 @@ The entire code has been developed using Python programming language, utilizing 
   5. Run the App_Final.py file and it will point to the 'localhost' with the port.
   6. Open the 'localhost IP address' on a web browser and use the application.
   
+  **Note** - User needs to use own Client id, Client Secret and User Agent in Reddit Crawl Script and App_Final.py
+  
   
 ### Approach
 
