@@ -46,7 +46,7 @@ The approach taken for the task is as follows:
 
 **For Collecting Data**(Details in [Script](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Reddit_Crawl_Script%20.ipynb) )
 
-  1. Used Reddit Crawl Script to Collect 150 Reddit India SubReddit data for each of the 11 flairs.
+  1. Used Reddit Crawl Script to Collect 250 Reddit India SubReddit data for each of the 11 flairs.
  
 **For Analysing the Collected Data**(Details in [DataAnalysis](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/Notebooks/Exploratory_Data_Analysis_Final%20.ipynb) )
 
