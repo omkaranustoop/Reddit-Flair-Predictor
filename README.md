@@ -104,7 +104,7 @@ The approach taken for the task is as follows:
 | CNN                        | 0.6553            |
 | LSTM                       | 0.1990            |
 
-#### Analysis and Key Observations
+### Analysis and Key Observations
 
 **Intuition behind Choosing Random Forest and Xgboost**
 
