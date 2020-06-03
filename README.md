@@ -15,6 +15,7 @@ The directory is a ***Flask*** web application set-up for hosting on *Heroku* se
   8. **Notebooks** - This has the three Jupyter Notebook Files for Data Collection(**Reddit_Crawl_Script**), Data Analysis    (**Exploratory_Data_Analysis_Final**) and Flare Prediction(**Final_Reddit_Flare_Detector**). Notebooks can be opened in Colaboratory.
   9. **Templates** - This folder Contains the HTML files used for Building the Web Application's Front End.
   10. **Static** - Contains the CSS file for Web Application's Front End.
+  11. **Working** - This Folder has some Screenshots of the live Application.
   
 ### Additional Requirements
 Apart from the Dependencies in [requirements](https://github.com/omkaranustoop/Reddit-Flare-Detector/blob/master/requirements.txt),
