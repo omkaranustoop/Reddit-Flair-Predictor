@@ -1,6 +1,6 @@
-# Reddit Flair Detector
+# Reddit Flair Predictor
 
-A Reddit Flair Detector web application to detect flairs of Reddit India posts using Machine Learning algorithms. The application can be found live at [Reddit Flair Detector](https://redditflaredetectorfinal.herokuapp.com/).
+A Reddit Flair Predictor web application to detect flairs of Reddit India posts using Machine Learning algorithms. The application can be found live at [Reddit Flair Predictor](https://redditflaredetectorfinal.herokuapp.com/).
 
 ### Directory Structure
 
